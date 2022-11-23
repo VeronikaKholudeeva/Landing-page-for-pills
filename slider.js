@@ -18,7 +18,7 @@ function currentSlide(n) {
 /* Функция перелистывания */
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("rev");
+    let slides = document.getElementsByClassName("review");
     
     if (n > slides.length) {
       slideIndex = 1
@@ -33,3 +33,4 @@ function showSlides(n) {
     }   
     slides[slideIndex - 1].style.display = "block"; 
 }
+
