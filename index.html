@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>LevelUp - продукт для повышения потенции</title>
+        <script src="slider.js" defer></script>
+        <script src="timer.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <span class="logo"><h1>LevelUp </h1></span>
+            <nav> <ul>
+                <li><a href="#">Состав</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Заказать</a></li>
+            </ul></nav>
+        </header>
+        <div class="container">
+            <div class="promo">
+                <div class="video"><video src="video.mp4" loop autoplay muted></video></div>
+                <div class="name product"><h3>LevelUp - продукт для повышения потенции</h3></div>
+                <div class="cont">
+                    <figure class="image"><img src="pictures/prod.png" alt="LevelUp"></figure>
+                    <div class="characteristics">
+                        <ul>
+                            <li>Состоит из растительных компонентов</li>
+                            <li>Высокая эффективность</li>
+                            <li>Простота и удобство применения</li>
+                        </ul>
+                    </div>
+                </div>
+                <div><button type="button">Заказать</button></div>
+            </div>
+            <div class="composition">
+                <div class="compos2">
+                    <figure class="image flexitem1"><img src="pictures/prod.png" alt="LevelUp"></figure>
+                    <div class="flexitem2">
+                        <div class="compound"><img src="pictures/yak.jpg" alt=""><h4>Якорцы стелющиеся</h4></div>
+                        <div class="compound"><img src="pictures/vit.png" alt=""><h4>Витания снотворная</h4></div>
+                        <div class="compound"><img src="pictures/mak.jpg" alt=""><h4>Макуна жгучая</h4></div>
+                    </div>
+                    <div class="flexitem3">
+                        <div class="compound"><img src="pictures/arg.jpg" alt=""><h4>Аргирея красивая</h4></div>
+                        <div class="compound"><img src="pictures/car.jpg" alt=""><h4>Кариеса съедобная</h4></div>
+                        <div class="compound"><img src="pictures/oz.jpg" alt=""><h4>Гееория сетчатая</h4></div>
+                    </div>
+                </div>
+                <div class="flexitem4"><button type="button">Заказать</button></div>
+            </div>
+            <div class="reviews">
+                <div class="revs">
+                    <div class="rev"><img src="pictures/rev1.jpg" alt=""><h5>Игорь Семенов</h5><p>Случился у меня роман на старости лет. А силы уже не те. Но даму свою порадовать хочется. Пропил три недели препарат и что могу сказать. Разочарования ни я, ни моя любовь не испытали.</p></div>
+                    <div class="rev"><img src="pictures/rev2.jpg" alt=""><h5>Петр Иванов</h5><p>Таблетки эффективные. Для полного восстановления требует времени, оно того того стоит, продолжительность полового акта значительно увеличилась. Побочных эффектов не заметил.</p></div>
+                    <div class="rev"><img src="pictures/rev3.jpg" alt=""><h5>Олег Лобанов</h5><p>И как я раньше без него жил. Не верил в такой результат, взял чисто на пробу из-за отсутствия побочных эффектов. А оказалось он еще и хорошо помогает. Принимал три месяца потом непосредственно перед ночью. Отлично.</p></div>
+                </div>
+                <div>
+                    <a class="previous" onclick="previousSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+            </div>
+            <div class="promo2">
+                <div class="promo22"><figure class="doctor image"><img src="pictures/doctor.png" alt="LevelUp"></figure>
+                <div class="description"><p>LevelUp - лекарственный препарат, положительно влияющий на кровообращение в районе малого таза путем расширения сосудов.</p></div>
+            </div>
+                <div class="characts">
+                    <ul>
+                        <li>Эффективен</li>
+                        <li>Содержит только растительные компоненты</li>
+                        <li>Доступная цена</li>
+                    </ul>
+                </div>
+                <div><button type="button">Заказать</button></div>
+            </div>
+            <div class="orderform">
+                <div class="name product"><h3>LevelUp - продукт для повышения потенции</h3></div>
+                <div class="timer"><span class="min" id="min">30</span>:<span class="sec" id="sec">00</span></div>
+                <div class="ord">
+                    <div class="product">
+                        <figure class="image"><img src="pictures/prod.png" alt="LevelUp"></figure>
+                        <span class="oldprice">3500 руб.</span>
+                        <span class="newprice">2300 руб.</span>
+                    </div>
+                    <div class="form">
+                        <form action="" name="order" autocomplete="on">
+                            <label>Имя: <span  class="tooltip1" tabindex="1" onclick="focus()"><input type="text" ><span class="tooltiptext1">Иванов Иван Иванович</span></span></label>
+                            <br>
+                            <label>Номер телефона:<span  class="tooltip2" tabindex="2"><input type="number"><span class="tooltiptext2">79888888888</span></span></label>
+                            <div class="button"><button type="submit" >Заказать</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </body>
+</html>

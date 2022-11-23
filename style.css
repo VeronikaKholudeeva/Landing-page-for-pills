@@ -1,0 +1,346 @@
+body{
+    margin: 0;
+    
+}
+.container{
+    
+    margin: 0 auto;
+    text-align: center;
+}
+
+header{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    
+    color:rgb(209, 169, 18)
+}
+.logo{
+    display: inline-flex;
+    align-items: center;
+    
+}
+nav{
+    display: inline-flex;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    
+}
+header a{
+    color:rgb(209, 169, 18);
+}
+header ul{
+    display: inline-flex;
+}
+header li{
+    padding-left: 20%;
+
+}
+.promo{
+    
+    padding-bottom: 5%;
+    padding-top: 5%;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.745);
+    color:rgb(209, 169, 18);
+    color:white;
+}
+.promo img{
+    width: 50%;
+    
+}
+.video{
+   
+}
+.promo ul{
+    padding:0;
+    text-align: left;
+}   
+
+.promo li{
+    margin-top: 5px;
+}
+.revs img{
+    height: 30%;
+    border-radius: 100%;
+}
+.revs{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:auto;
+    flex-wrap: wrap;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.promo2{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-image: linear-gradient(180deg,  rgb(209, 169, 18), #a7a7a7);
+}
+.promo2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+
+
+.tooltip1, .tooltip2 {
+    position: relative;
+    display: inline-block;
+     /* Если вы хотите, чтобы точки под перемещаемым текстом */
+  }
+  
+  /* Текст подсказки */
+  .tooltip1 .tooltiptext1, .tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Расположите текст подсказки */
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: 90%;
+    
+  
+    /* Исчезают в подсказке */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Подсказка стрелка */
+  .tooltip1 .tooltiptext1::after, .tooltip2 .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
+  .tooltip1:focus .tooltiptext1, .tooltip2:focus .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.ord{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 60px;
+}
+.newprice{
+    position:absolute;
+    color:red;
+    animation-name: price;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.orderform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("pictures/background2.jpg");
+    color: white;
+}
+
+.timer{
+    font-size: 26px;
+    background-color: red;
+    padding:5px 5px;
+    border-radius: 10px;
+}
+.min, .sec{
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+    padding: 4px 9px;
+}
+
+.oldprice{
+    font-size: small;
+    text-decoration: line-through;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    margin:auto;
+    text-align: right;
+}
+.product img{
+    height:300px;
+}
+
+.button{
+ text-align: center;
+}
+
+.promo2 li{
+   
+}
+.promo22{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.rev{
+    background-color: rgba(255, 255, 255, 0.712);
+    width: 300px;
+    padding: 30px;
+    height: 400px;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-image: linear-gradient(180deg, #a7a7a7, rgb(209, 169, 18));
+    color: black;
+}
+
+
+.characteristics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+button{
+    background-color: rgb(83, 161, 83);
+    color:white;
+    border:none;
+    border-radius: 100px;
+    padding:20px;
+    margin-top:30px;
+    font-size: 20px;
+}
+
+video{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    
+}
+.cont{
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.flexitem1 img{
+    width:60%;
+    
+}
+
+.cont figure{
+    margin-left: 0;
+    margin-right: 0;
+}
+.composition{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-image: url("pictures/background2.jpg");
+    color:white;
+}
+.compound img{
+    width: 200px;
+    border-radius: 100%;
+}
+.compound h4{
+  margin-top:-5px;
+}
+
+.compos2{
+    width: 65%;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexitem2{
+    order:1;
+}
+.flexitem1{
+    order:2;
+}
+.flexitem3{
+    order:3;
+}
+.flexitem4{
+    order:4;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes price {
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 26px;
+    }    
+}
