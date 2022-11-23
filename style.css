@@ -217,6 +217,9 @@ video{
     flex-direction: row;
     align-items: center;
 }
+.doctor img{
+    width:100%;
+}
 
 
 /*----------------- 5 БЛОК (ФОРМА ЗАКАЗА) --------------------*/
