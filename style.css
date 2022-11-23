@@ -1,12 +1,23 @@
 /*-------- ОБЩЕЕ ----------*/
+@media screen and (max-width:768px) {
+    header{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 body{
     margin: 0;
-    
 }
 ul{
-    list-style-type: none;
-    
+    list-style-type: none;   
 }
 button{
     background-color: rgb(83, 161, 83);
@@ -20,12 +31,14 @@ button{
 
 
 /*-------- ШАПКА -----------*/
+ 
 
 header{
     display: inline-flex;
     width: 100%;
     justify-content: space-around;
     color:rgb(209, 169, 18)
+    
 }
 .product_name{
     display: inline-flex;

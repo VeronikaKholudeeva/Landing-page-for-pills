@@ -6,14 +6,15 @@
         <title>LevelUp - продукт для повышения потенции</title>
         <script src="slider.js" defer></script>
         <script src="timer.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
             <span class="productname"><h1>LevelUp </h1></span>
             <nav> <ul>
-                <li><a href="#">Состав</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Заказать</a></li>
+                <li><a href="#composition">Состав</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#order_form">Заказать</a></li>
             </ul></nav>
         </header>
         <div class="container">
@@ -34,7 +35,8 @@
                 <div><button type="button" onclick="document.querySelector('.order_form').scrollIntoView()">Заказать</button></div>
             </div>
 
-            <div class="composition">
+            <div class="composition" id="composition">
+                <h1>Состав</h1> 
                 <div class="composition_container">
                     <figure class="image flexitem1"><img src="pictures/prod.png" alt="LevelUp"></figure>
                     <div class="flexitem2">
@@ -52,7 +54,8 @@
             </div>
 
 
-            <div class="reviews">
+            <div class="reviews" id="reviews">
+                <h1> Отзывы </h1>
                 <div class="reviews_container">
                     <div class="review"><img src="pictures/rev1.jpg" alt=""><h5>Игорь Семенов</h5><p>Случился у меня роман на старости лет. А силы уже не те. Но даму свою порадовать хочется. Пропил три недели препарат и что могу сказать. Разочарования ни я, ни моя любовь не испытали.</p></div>
                     <div class="review"><img src="pictures/rev2.jpg" alt=""><h5>Петр Иванов</h5><p>Таблетки эффективные. Для полного восстановления требует времени, оно того того стоит, продолжительность полового акта значительно увеличилась. Побочных эффектов не заметил.</p></div>
