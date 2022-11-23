@@ -133,7 +133,7 @@ video{
     color:white;
 }
 .compound img{
-    width: 200px;
+    width: 100%;
     border-radius: 100%;
 }
 .compound h4{
