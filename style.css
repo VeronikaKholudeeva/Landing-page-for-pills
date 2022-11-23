@@ -1,21 +1,33 @@
+/*-------- ОБЩЕЕ ----------*/
+
 body{
     margin: 0;
     
 }
-.container{
+ul{
+    list-style-type: none;
     
-    margin: 0 auto;
-    text-align: center;
 }
+button{
+    background-color: rgb(83, 161, 83);
+    color:white;
+    border:none;
+    border-radius: 100px;
+    padding:20px;
+    margin-top:30px;
+    font-size: 20px;
+}
+
+
+/*-------- ШАПКА -----------*/
 
 header{
     display: inline-flex;
     width: 100%;
     justify-content: space-around;
-    
     color:rgb(209, 169, 18)
 }
-.logo{
+.product_name{
     display: inline-flex;
     align-items: center;
     
@@ -23,10 +35,6 @@ header{
 nav{
     display: inline-flex;
     align-items: center;
-}
-ul{
-    list-style-type: none;
-    
 }
 header a{
     color:rgb(209, 169, 18);
@@ -38,8 +46,19 @@ header li{
     padding-left: 20%;
 
 }
-.promo{
+
+/*---------------- ОБЩЕЕ (КОНТЕНТ) -----------------*/
+
+.container{
     
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/*-------------------- 1 БЛОК (ПРОМО) -----------------------*/
+
+.promo{
     padding-bottom: 5%;
     padding-top: 5%;
     position: relative;
@@ -54,22 +73,92 @@ header li{
     width: 50%;
     
 }
-.video{
-   
-}
 .promo ul{
     padding:0;
     text-align: left;
 }   
-
 .promo li{
     margin-top: 5px;
 }
-.revs img{
+.product_info{
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.characteristics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+video{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+.product_info figure{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/*------------ 2 БЛОК (СОСТАВ ПРОДУКТА) ----------------*/
+
+.composition{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-image: url("pictures/background2.jpg");
+    color:white;
+}
+.compound img{
+    width: 200px;
+    border-radius: 100%;
+}
+.compound h4{
+  margin-top:-5px;
+}
+
+.composition_container{
+    width: 65%;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexitem2{
+    order:1;
+}
+.flexitem1{
+    order:2;
+}
+.flexitem3{
+    order:3;
+}
+.flexitem4{
+    order:4;
+}
+.flexitem1 img{
+    width:60%;
+}
+
+
+/*--------------- 3 БЛОК (ОТЗЫВЫ) -------------------*/
+
+
+
+.reviews_container img{
     height: 30%;
     border-radius: 100%;
 }
-.revs{
+.reviews_container{
     display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
@@ -78,83 +167,53 @@ header li{
     animation-name: fade;
     animation-duration: 1.5s;
 }
+.review{
+    background-color: rgba(255, 255, 255, 0.712);
+    width: 300px;
+    padding: 30px;
+    height: 400px;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-image: linear-gradient(180deg, #a7a7a7, rgb(209, 169, 18));
+    color: black;
+}
 
-.promo2{
+
+
+/*--------------- 4 БЛОК (ПРОМО) ----------------*/
+
+.promo_second{
     display: flex;
     flex-direction: column;
     padding: 50px;
     background-image: linear-gradient(180deg,  rgb(209, 169, 18), #a7a7a7);
 }
-.promo2 ul{
+.promo_second ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
 }
+.promo_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 
+/*----------------- 5 БЛОК (ФОРМА ЗАКАЗА) --------------------*/
 
-
-.tooltip1, .tooltip2 {
-    position: relative;
-    display: inline-block;
-     /* Если вы хотите, чтобы точки под перемещаемым текстом */
-  }
-  
-  /* Текст подсказки */
-  .tooltip1 .tooltiptext1, .tooltip2 .tooltiptext2 {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-  
-    /* Расположите текст подсказки */
-    position: absolute;
-    z-index: 100;
-    bottom: 125%;
-    left: 90%;
-    
-  
-    /* Исчезают в подсказке */
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  /* Подсказка стрелка */
-  .tooltip1 .tooltiptext1::after, .tooltip2 .tooltiptext2::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 10%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
-  .tooltip1:focus .tooltiptext1, .tooltip2:focus .tooltiptext2 {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-.ord{
+.order_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("pictures/background2.jpg");
+    color: white;
+}
+.order_container{
     display: flex;
     flex-direction: row;
     padding-bottom: 60px;
@@ -166,40 +225,6 @@ header li{
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
 }
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; 
-}
-
-input[type='number'],
-input[type="number"]:hover,
-input[type="number"]:focus {
-    appearance: none;
-    -moz-appearance: textfield;
-}
-
-.orderform{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("pictures/background2.jpg");
-    color: white;
-}
-
-.timer{
-    font-size: 26px;
-    background-color: red;
-    padding:5px 5px;
-    border-radius: 10px;
-}
-.min, .sec{
-    background-color: white;
-    color:black;
-    border-radius: 5px;
-    padding: 4px 9px;
-}
-
 .oldprice{
     font-size: small;
     text-decoration: line-through;
@@ -222,110 +247,76 @@ form{
  text-align: center;
 }
 
-.promo2 li{
-   
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
 }
-.promo22{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.rev{
-    background-color: rgba(255, 255, 255, 0.712);
-    width: 300px;
-    padding: 30px;
-    height: 400px;
-}
-.reviews{
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    background-image: linear-gradient(180deg, #a7a7a7, rgb(209, 169, 18));
-    color: black;
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 
-.characteristics{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+/*------------ ОБРАТНЫЙ ОТСЧЕТ ----------------*/
+.timer{
+    font-size: 26px;
+    background-color: red;
+    padding:5px 5px;
+    border-radius: 10px;
 }
-button{
-    background-color: rgb(83, 161, 83);
-    color:white;
-    border:none;
-    border-radius: 100px;
-    padding:20px;
-    margin-top:30px;
-    font-size: 20px;
+.min, .sec{
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+    padding: 4px 9px;
 }
 
-video{
+
+/*----------------- ПОДСКАЗКИ -----------------------*/
+
+.tooltip1, .tooltip2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip1 .tooltiptext1, .tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
     position: absolute;
-    z-index: -1;
-    top:0;
-    left:0;
-    right:0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-   
-    
-}
-.cont{
-    display:inline-flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    z-index: 100;
+    bottom: 125%;
+    left: 90%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
 
+  .tooltip1 .tooltiptext1::after, .tooltip2 .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip1 >input:focus + .tooltiptext1,  .tooltip2 >input:focus + .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+  }
 
+  
+/*-------------- АНИМАЦИИ ------------*/
 
-.flexitem1 img{
-    width:60%;
-    
-}
-
-.cont figure{
-    margin-left: 0;
-    margin-right: 0;
-}
-.composition{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px;
-    background-image: url("pictures/background2.jpg");
-    color:white;
-}
-.compound img{
-    width: 200px;
-    border-radius: 100%;
-}
-.compound h4{
-  margin-top:-5px;
-}
-
-.compos2{
-    width: 65%;
-    margin: auto;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.flexitem2{
-    order:1;
-}
-.flexitem1{
-    order:2;
-}
-.flexitem3{
-    order:3;
-}
-.flexitem4{
-    order:4;
-}
 
 @keyframes fade{
     from{
