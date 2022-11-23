@@ -1,16 +1,23 @@
 /*-------- ОБЩЕЕ ----------*/
 @media screen and (max-width:768px) {
     header{
-        display: flex;
         flex-direction:column;
-        justify-content:center;
-        align-items: center;
+        align-items:center;
+        width: 100%;
     }
     nav ul{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+    header li{
+        
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 body{
@@ -38,11 +45,6 @@ header{
     width: 100%;
     justify-content: space-around;
     color:rgb(209, 169, 18)
-    
-}
-.product_name{
-    display: inline-flex;
-    align-items: center;
     
 }
 nav{
