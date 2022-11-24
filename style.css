@@ -70,8 +70,7 @@ header li{
     color:white;
 }
 .promo img{
-    width: 50%;
-    
+    width: 50%;  
 }
 .promo ul{
     padding:0;
@@ -109,7 +108,9 @@ video{
 .name_product{
     margin:auto;
 }
-
+.image{
+    margin: 0;
+}
 
 /*------------ 2 БЛОК (СОСТАВ ПРОДУКТА) ----------------*/
 
@@ -373,6 +374,9 @@ input[type="number"]:focus {
         display: flex;
         flex-direction: column;
     }
+    .promo img{
+        width: 30%;  
+    }
     .composition_container{
         width: 100%;
     }
@@ -390,6 +394,7 @@ input[type="number"]:focus {
     
     .promo_second{
         padding: 0 0 50px 0;
+        
     }
     .promo_container{
         padding:50px;
@@ -400,6 +405,8 @@ input[type="number"]:focus {
     }
     .characts li{
         padding: 10px;
+        font-size: 16px;
+        
     }
     .review{
         width: 70%;
