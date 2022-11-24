@@ -61,7 +61,7 @@
                     <div class="review"><img src="pictures/rev2.jpg" alt=""><h5>Петр Иванов</h5><p>Таблетки эффективные. Для полного восстановления требует времени, оно того того стоит, продолжительность полового акта значительно увеличилась. Побочных эффектов не заметил.</p></div>
                     <div class="review"><img src="pictures/rev3.jpg" alt=""><h5>Олег Лобанов</h5><p>И как я раньше без него жил. Не верил в такой результат, взял чисто на пробу из-за отсутствия побочных эффектов. А оказалось он еще и хорошо помогает. Принимал три месяца потом непосредственно перед ночью. Отлично.</p></div>
                 </div>
-                <div>
+                <div class="slider_buttons">
                     <a class="previous" onclick="previousSlide()">&#10094;</a>
                     <a class="next" onclick="nextSlide()">&#10095;</a>
                 </div>
@@ -90,14 +90,14 @@
                 <div class="order_container">
                     <div class="product">
                         <figure class="image"><img src="pictures/prod.png" alt="LevelUp"></figure>
-                        <span class="oldprice">3500 руб.</span>
-                        <span class="newprice">2300 руб.</span>
+                        <div class="oldprice">3500 руб.</div>
+                        <div class="newprice">2300 руб.</div>
                     </div>
                     <div class="form">
                         <form action="" name="order" autocomplete="on">
-                            <label>Имя: <span class="tooltip1" tabindex="1"><input type="text"><span class="tooltiptext1">Иванов Иван Иванович</span></span></label>
+                            <label for="name">Имя:</label><span class="tooltip1" tabindex="1"><input type="text" id="name"><span class="tooltiptext1">Иванов Иван Иванович</span></span>
                             <br>
-                            <label>Номер телефона:<span  class="tooltip2" tabindex="2"><input type="number"><span class="tooltiptext2">79888888888</span></span></label>
+                            <label for="phone">Номер телефона:</label><span  class="tooltip2" tabindex="2"><input type="number" name="phone"><span class="tooltiptext2">79888888888</span></span>
                             <div class="button"><button type="submit" >Заказать</button></div>
                         </form>
                     </div>

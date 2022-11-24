@@ -31,7 +31,7 @@ header{
 nav{
     display: inline-flex;
     align-items: center;
-
+    font-size: 18px;
 }
 header a{
     color:rgb(209, 169, 18);
@@ -184,7 +184,17 @@ video{
     background-image: linear-gradient(180deg, #a7a7a7, rgb(209, 169, 18));
     color: black;
 }
-
+.slider_buttons{
+    margin-top: 10px;
+}
+.previous, .next{
+    font-size: 24px;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding:10px;
+    margin: 0 10px;
+    cursor:pointer;
+}
 
 
 /*--------------- 4 БЛОК (ПРОМО) ----------------*/
@@ -194,6 +204,7 @@ video{
     flex-direction: column;
     padding: 50px;
     background-image: linear-gradient(180deg,  rgb(209, 169, 18), #a7a7a7);
+    font-size: 20px;
 }
 .promo_second ul{
     display: flex;
@@ -242,7 +253,7 @@ video{
     animation-name: price;
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
-    
+    margin-left:5%;   
 }
 .oldprice{
     font-size: small;
@@ -258,6 +269,9 @@ form{
     margin:auto;
     text-align: right;
     width: 100%;
+}
+.form label{
+    text-align: left;
 }
 .product img{
     width:60%;
@@ -367,7 +381,7 @@ input[type="number"]:focus {
     }
     
     .tooltip1 .tooltiptext1, .tooltip2 .tooltiptext2 {
-        left: 0%;
+        left: 50%;
       }
     
     .name_product{
@@ -389,6 +403,11 @@ input[type="number"]:focus {
     }
     .review{
         width: 70%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
